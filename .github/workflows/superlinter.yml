@@ -1,17 +1,14 @@
-name: Super-Linter
-
-on: push
+name: CI
+on: [push]
 
 jobs:
-  super-lint:
-    name: Lint code base
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run Super-Linter
-        uses: github/super-linter@v4
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@master
+      - uses: redkubes/docusaurus-deploy-action@v1
+        with:
+          source-folder: my-website
+          git-user: $Xyandraa9
+          git-password: ${{ secrets.GITHUB_TOKEN }}
+          deployment-branch: gh-pages
