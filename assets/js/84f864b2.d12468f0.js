@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4749],{7940:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/iFlow/blog/tags/hola","allTagsPath":"/iFlow/blog/tags","count":1}')}}]);
