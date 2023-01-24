@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: cd my-website && npm i
       - name: Build
-        run: cd my-website && echo Curent working directory && pwd && npm build
+        run: cd my-website && echo Curent working directory && pwd && npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
