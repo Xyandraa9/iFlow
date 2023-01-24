@@ -44,9 +44,9 @@ jobs:
         with:
           node-version: 16.x
       - name: Install dependencies
-        run: cd my-website && npm i
+        run: npm i
       - name: Build
-        run: cd my-website && echo Curent working directory && pwd && npm run build
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
